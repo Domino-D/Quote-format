@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #dfdfdf;
+}
+html{
+    font-size: 15px;
+    font-family: 微软雅黑;
+}
+.block{
+    overflow: auto;
+    width: 47rem;
+    margin: 0 auto;
+    padding: 2rem 5rem;
+    background-color: #ffffff;
+}
+.head img{
+    height: 2.5rem;
+    float: left;
+}
+.head a{
+    display: block;
+    float: right;
+    padding-top: 0.5rem;
+}
+.head{
+    padding-bottom: 6rem;
+}
+#details ul{
+    clear: both;
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+    line-height: 1rem;
+}
+#content h{
+    font-weight: 800;
+    font-size: 1.3rem;
+    display: block;
+    padding-top: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+#price p{
+    font-weight: 600;
+}
+#price table{
+    border-spacing: 0rem;
+    border: solid #000000 1px;
+}
+#price th{
+    width: 6rem;
+    border: solid #000000 1px;
+}
+#price th:first-child{
+    width: 20rem;
+}
+#price td{
+    border: solid #000000 1px;
+}
+#price td:not(:first-child){
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+body{
+    margin: 0rem;
+}
+html{
+    font-size: 15px;
+    font-family: 微软雅黑;
+}
+#overview{
+    overflow: auto;
+    width: 65rem;
+    margin: 0px auto;
+    padding: 0rem 5rem;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 10px #000000;
+}
+h{
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+}
+li{
+    list-style: none;
+    line-height: 2.5rem;
+}
+fieldset{
+    margin-top: 1.5rem;
+    border: 1px solid #000000;
+}
+legend{
+    font-size: 1.4rem;
+}
+input{
+    font-family: arial;
+    font-size: 1rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+#fax,#tel,#dt,#valuation{
+    border: 0rem;
+    width: 7rem;
+    background-color: #f1f1f1;
+    cursor: default;
+}
+span{
+    margin-right: 0.5rem;
+}
+table{
+    padding-left: 3rem;
+}
+tr td:nth-child(3) input,tr td:nth-child(4) input{
+    text-align: right;
+}
+#client{
+    width: 20rem;
+}
+#cc{
+    width: 30rem;
+}
+textarea{
+    overflow-x: hidden;
+    resize: none;
+    width: 62rem;
+    min-height: 30rem;
+    font-size: 1rem;
+}
+#submit{
+    margin: 1rem 3rem;
+    float: right;
+}
+#valuation{
+    width: 20rem;
+    height: 1.5rem;
+    margin-left: 20rem;
+    font-weight: 600;
+}

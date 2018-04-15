@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="quote.css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="quotescript.js"></script>
+    <title>QUOTE FORMAT</title>
+</head>
+<body oncontextmenu="return false">
+    <div id="overview">
+        <h>方案报价</h>
+        <form method="post" action="information.php" target="_blank" onsubmit="return confirm();">
+            <li>
+                <label for="quoteno">报价单号:</label>
+                <input id="quoteno" type="text" name="quoteno">
+                <span>*（必填）</span>
+            </li>
+        <fieldset>
+            <legend>联系信息</legend>
+            <ul>
+                <li>
+                    <label for="client">客户公司全称:</label>
+                    <input id="client" type="text" name="client">
+                    <span>*（必填）</span>
+                </li>
+                <li>
+                    <label for="clientcontact">客户联系人:</label>
+                    <input id="contact" type="text" name="contact">
+                    <span>*（必填）</span>
+                </li>
+                <li>
+                    <label for="cc">抄送邮箱地址:</label>
+                    <input id="cc" type="text" value="a@gea.com;b@gea.com;c@gea.com" name="cc">
+                    <span>*（必填）</span>
+                </li>
+                <li>
+                    <label for="sender">报价人:</label>
+                    <input id="sender" type="text" name="sender">
+                    <span>*（必填）</span>
+                </li>
+                <li>
+                    <label for="email">报价人邮箱地址:</label>
+                    <input id="email" type="text" value="@gea.com" name="email">
+                    <span>*（必填）</span>
+                </li>
+                <li>
+                    <label for="fax">传真:</label>
+                    <input id="fax" type="text" value="021-24082188" name="fax" onfocus="this.blur()">
+                </li>
+                <li>
+                    <label for="tel">联系电话:</label>
+                    <input id="tel" type="text" value="021-24082288" name="tel" onfocus="this.blur()">
+                </li>
+                <li>
+                    <label for="dt">报价日期:</label>
+                    <input id="dt" type="text" name="dt" onfocus="this.blur()">
+                </li> 
+        </ul>
+        </fieldset>
+        <fieldset>
+            <legend>方案内容</legend>
+            <p>尊敬的<a id="contactcopy">XXX</a>：</p>
+            <textarea id="formatcontent" name="formatcontent"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>报价表</legend>
+            <table>
+                <tr>
+                    <th>序号</th>
+                    <th>类别</th>
+                    <th>备件费用</th>
+                    <th>服务费用</th>
+                </tr>
+                <tr>
+                    <td><label for="item1">1</label></td>
+                    <td><input type="text" value="设备备件服务" name="price0"></td>
+                    <td><input class="item" type="text" value="0" name="price1"><span>RMB(Inc.tax)</span></td>
+                    <td><input class="item" type="text" value="0" name="price2"><span>RMB(Inc.tax)</span></td>
+                </tr>
+                <tr>
+                    <td><label for="item2">2</label></td>
+                    <td><input type="text" value="仪表仪器" name="price3"></td>
+                    <td><input class="item" type="text" value="0" name="price4"><span>RMB(Inc.tax)</span></td>
+                    <td><input class="item" type="text" value="0" name="price5"><span>RMB(Inc.tax)</span></td>
+                </tr>
+                <tr>
+                    <td><label for="item3">3</label></td>
+                    <td><input type="text" value="单机备件服务" name="price6"></td>
+                    <td><input class="item" type="text" value="0" name="price7"><span>RMB(Inc.tax)</span></td>
+                    <td><input class="item" type="text" value="0" name="price8"><span>RMB(Inc.tax)</span></td>
+                </tr>
+                <tr>
+                    <td><label for="item4">4</label></td>
+                    <td><input type="text" name="price9"></td>
+                    <td><input class="item" type="text" value="0" name="price10"><span>RMB(Inc.tax)</span></td>
+                    <td><input class="item" type="text" value="0" name="price11"><span>RMB(Inc.tax)</span></td>
+                </tr>
+                <tr>
+                    <td><label for="item5">5</label></td>
+                    <td><input type="text" name="price12"></td>
+                    <td><input class="item" type="text" value="0" name="price13"><span>RMB(Inc.tax)</span></td>
+                    <td><input class="item" type="text" value="0" name="price14"><span>RMB(Inc.tax)</span></td>
+                </tr>
+                <tr>
+                    <td><label for="item6">6</label></td>
+                    <td><input type="text" name="price15"></td>
+                    <td><input class="item" type="text" value="0" name="price16"><span>RMB(Inc.tax)</span></td>
+                    <td><input class="item" type="text" value="0" name="price17"><span>RMB(Inc.tax)</span></td>
+                </tr>
+                <tr>
+                    <td><label for="item7">7</label></td>
+                    <td><input type="text" name="price18"></td>
+                    <td><input class="item" type="text" value="0" name="price19"><span>RMB(Inc.tax)</span></td>
+                    <td><input class="item" type="text" value="0" name="price20"><span>RMB(Inc.tax)</span></td>
+                </tr>
+            </table>
+            <input id="valuation" type="text" name="valuation" onfocus="this.blur()">           
+        </fieldset>
+        <input id="submit" type="submit" value="提交" >
+        </form>
+    </div>
+</body>
+</html>
